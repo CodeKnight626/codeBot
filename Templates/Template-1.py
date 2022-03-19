@@ -1,9 +1,4 @@
-import discord
-import os.path
-
-
-# Leemos la variable de sistema del sistema operativo
-CODEBOT_TOKEN = os.environ['CODEBOT_TOKEN']
+import discord #Libreria de discord
 
 client = discord.Client()
 
@@ -21,4 +16,4 @@ async def on_message(message):
     if message.content.startswith('$hello'):
         await message.channel.send('hello')
 
-client.run(CODEBOT_TOKEN)
+client.run("Tu token aqui")
